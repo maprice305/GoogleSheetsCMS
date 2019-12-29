@@ -11,15 +11,15 @@ return html;
 };
 
 //get the sheetID from the yaml in the project's root directory
-var jsonconfig;
-var sheetID;
-read_config('../../sheets.json'); // calling function
+//var jsonconfig;
+//var sheetID;
+//read_config('../../sheets.json'); // calling function
 
-setTimeout(function() { // let's wait 2000 ms. hope it's enough to send the request and receive and read the response
-   sheetID = jsonconfig["sheetID"][0];
-   console.log(jsonconfig["sheetID"][0]); // TADA! It's read.
-   console.log(sheetID);
-}, 3000);
+//setTimeout(function() { // let's wait 2000 ms. hope it's enough to send the request and receive and read the response
+   //sheetID = jsonconfig["sheetID"][0];
+   //console.log(jsonconfig["sheetID"][0]); // TADA! It's read.
+   //console.log(sheetID);
+//}, 3000);
 
 function read_config(cfgfile) {
    $.get({url: cfgfile, dataType: "text"})
